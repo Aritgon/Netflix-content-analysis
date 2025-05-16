@@ -11,18 +11,33 @@ This dataset contains information about netflix contents, including 'type', 'tit
 
 This dataset's shape is (8807, 15).
 
+
 ## Data Cleaning
 - handled null values in important column like 'country'.
 - created 'date_added_null', 'rating_null', 'duration_null' in respective to their columns for targeting null values(this are the 3 null flag columns that is mentioned in dataset summary). 
 - changed data_added datatype from object(string in SQL) to actual date format(YYYY-mm-dd).
 
+
 ## Key question and analysis
+- Movie vs TV Show?
+- Quarterly upload trend. which quarter has the most contents uploaded?
 - which genre contributed the most?
 - which age group of audience does netflix target?
 - Top 10 actors who appeared in the most shows/titles?
 - Top 10 directors who directed the most shows/titles?
 - which ratings of content is the most produced?
-- average movie duration. Do older movies tends to be more lengthy or is it the modern movies?
+- average duration for movies. Do older movies tends to be more lengthy or is it the modern movies?
 - avg seasons per generation for TV shows. is it the older generation shows that has more seasons in their show?
 - Top contributing countries for each type of contents?
 - seasonal content upload rate.
+
+
+## Visual Insights
+
+### Movie vs TV Show
+![Content Type Distribution](pngs/movie%20vs%20tv%20show.png)
+_Insight: The netflix catalog is heavily skewed towards movies, which makes up around 70% of contents in netflix. TV Shows are at 30% of the netflix catalog._
+
+### year by year content upload trend
+![year progression of content types](pngs/year%20by%20year%20content%20type%20upload.png)
+_Insight: While netflix began increasing additions of TV Shows starting from 2016, movies still consistently dominated the majority of the platform's catalog. TV Shows peaked in 2020, where for movies it was 2019. After that both format has seen a noticeable decline in new releases._

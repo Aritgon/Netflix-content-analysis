@@ -249,3 +249,13 @@ select
 	count(*) as content_count
 from netflix
 group by "type";
+
+-- year by year content upload ratio.
+select
+	extract(year from date_added) as years,
+	"type",
+	count(*) as content_count
+from netflix
+where date_added is not null
+group by years, "type"
+order by years desc, "type";
