@@ -35,15 +35,15 @@ This dataset's shape is (8807, 15).
 ## Visual Insights
 
 ### Content Type Distribution : Movie vs TV Show
-<img src="pngs/movie vs tv show.png" width = "500"/>
-_Insight: The netflix catalog is heavily skewed towards movies, which makes up around 70% of contents in netflix. TV Shows are at 30% of the netflix catalog._
+<img src="pngs/movie vs tv show.png" width = "600"/>
+**🎯Insight:** _The netflix catalog is heavily skewed towards movies, which makes up around 70% of contents in netflix. TV Shows are at 30% of the netflix catalog._
 
 
 ### year by year content upload trend
-<img src="pngs/year by year content type upload.png" width = "500"/>
-_Insight: While netflix began increasing additions of TV Shows starting from 2016, movies still consistently dominated the majority of the platform's catalog. TV Shows peaked in 2020, where for movies it was 2019. After that both format has seen a noticeable decline in new releases._
+<img src="pngs/year by year content type upload.png" width = "600"/>
+**🎯Insight:** _While netflix began increasing additions of TV Shows starting from 2016, movies still consistently dominated the majority of the platform's catalog. TV Shows peaked in 2020, where for movies it was 2019. After that both format has seen a noticeable decline in new releases._
 
 
 ### Genre contributions : Top 10 Genre
-<img src="pngs/top 10 genres.png" width = "500"/>
-_Insight: Internation Movies, Action & Adventure and Comedies, all three makes up to 54% of the netflix catalog, indicating a wide range of consumer preference over the world._
+<img src="pngs/top 10 genres.png" width = "600"/>
+**🎯Insight:** _Internation Movies, Action & Adventure and Comedies, all three makes up to 54% of the netflix catalog, indicating a diverse audience preferences._
