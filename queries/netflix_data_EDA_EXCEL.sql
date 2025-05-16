@@ -242,3 +242,10 @@ select
 from netflix
 where date_added is not null
 group by quarters;
+
+-- TV Show vs movies?
+select
+	"type",
+	count(*) as content_count
+from netflix
+group by "type";
