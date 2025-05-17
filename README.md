@@ -81,13 +81,14 @@ This dataset's shape is (8807, 15).
 **🎯Insight:** _Its the USA which is contributing more in both format of content type in Netflix with 44% share of movies and 35% TV Shows, Followed by India which is at 2nd position with 15% share of movies._
 
 
-### 📍 Final thoughts & key takeaways
+
+## 📍 Final thoughts & key takeaways
 This case study explored Netflix's content strategy and its high audience engagement using SQL and EXCEL. Key findings include:
 - **Movie dominance** remained strong which peaked in 2018. Though TV Shows have shown significant growth since 2016.
 - **Genres like International Movies, Actions, adventures and Comedies** are the majority in Netflix's content catalog.
 - **Target audience is primarily Teens and adults** which is shaping Netflix's content strategy.
 - There's a noticeable shift towards producing **shorter contents in recent years**, reflecting bulk-production strategy.
-- USA has produced 44% of movies and 35% of TV shows alone, helping Netflix's bulk production strategy.
+- USA has produced 44% of movies and 35% of TV shows alone, helping in achieving Netflix's bulk production strategy.
 
 
 ## Thank you 👨‍💻
