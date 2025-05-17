@@ -259,3 +259,35 @@ from netflix
 where date_added is not null
 group by years, "type"
 order by years desc, "type";
+
+-- top contributing countries for each type.
+
+with whole_country_production as (
+	select
+		trim(unnest(string_to_array(country, ','))) as countries,
+		"type",
+		count(*) as count_of_titles
+	from netflix
+	where country is not null and country != 'unknown'
+	group by countries, "type"
+	),
+
+	type_count as (
+	select
+		"type",
+		count(*) as type_count
+	from netflix
+	where "type" is not null and country is not null
+	group by "type"
+	)
+
+select
+	wcp.countries,
+	tc."type",
+	wcp.count_of_titles,
+	round(wcp.count_of_titles * 100 / tc.type_count, 2) as content_share_percent,
+	row_number() over(partition by tc."type" order by wcp.count_of_titles desc) as ranking_between_countries
+from whole_country_production as wcp
+full outer join type_count as tc on tc."type" = wcp."type"
+order by wcp.count_of_titles desc;
+
